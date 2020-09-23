@@ -1,4 +1,4 @@
-module app
+module github.com/larkintuckerllc/starter-kit-image-go
 
 go 1.14
 
