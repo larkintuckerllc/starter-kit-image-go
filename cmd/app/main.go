@@ -6,11 +6,12 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/larkintuckerllc/starter-kit-image-go/internal/morestrings"
 	"rsc.io/quote"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, quote.Go())
+	fmt.Fprintf(w, morestrings.ReverseRunes(quote.Go()))
 }
 
 func main() {
